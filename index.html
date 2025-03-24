@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Diri</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan dengan file CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Biodata Diri</h2>
+        <form onsubmit="return showAlert()">
+            <table>
+                <tr>
+                    <td>Nama Depan</td>
+                    <td><input type="text" placeholder="Nama Depan" required></td>
+                </tr>
+                <tr>
+                    <td>Nama Belakang</td>
+                    <td><input type="text" placeholder="Nama Belakang" required></td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <select required>
+                            <option value="">Pilih Hobi</option>
+                            <option>Olahraga</option>
+                            <option>Musik</option>
+                            <option>Membaca</option>
+                            <option>Menulis</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <select required>
+                            <option value="">Pilih Jenis Kelamin</option>
+                            <option>Laki-laki</option>
+                            <option>Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea rows="3" placeholder="Alamat" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Nomor Handphone</td>
+                    <td><input type="tel" placeholder="Nomor Handphone" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Biodata berhasil diinput!");
+            return false; // Supaya form tidak benar-benar dikirim
+        }
+    </script>
+</body>
+</html>
